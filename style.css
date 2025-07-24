@@ -1,0 +1,24 @@
+.ename{
+    font-family: "Poller One", sans-serif;
+}
+.enamesub{
+    font-family: "Caveat", cursive;
+}
+.offcan-items{
+    font-family: "Rammetto One", sans-serif;
+}
+.offcanva-p{
+     font-family: "Jost", sans-serif;
+}
+
+.myCarousel {
+    animation-name: trans;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes trans {
+    50% {
+        transform: translateX(1.3rem);
+    }
+}

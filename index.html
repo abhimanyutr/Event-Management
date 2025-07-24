@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Moments</title>
+    <link rel="Icons" href="./Images/logoT.png">
+    
+
+    <!-- Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <!-- fontAwosome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Archivo+Black&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Caveat:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Libertinus+Math&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lilita+One&family=Poller+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rammetto+One&family=Sevillana&display=swap" rel="stylesheet">
+    <!-- CSS Link -->
+     <link rel="stylesheet" href="./style.css">
+     <!-- AOS Animation -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+     <style>
+        .main-banner {
+  animation: slow-zoom 7s ease-in infinite alternate;
+  object-fit: cover;
+}
+
+@keyframes slow-zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+     </style>
+
+</head>
+
+<body>
+
+
+    <section>
+<section class="relative h-screen overflow-hidden z-40">
+    <!-- Background Video -->
+    <!-- <video autoplay muted loop playsinline
+        class="absolute top-0 left-0 w-full h-screen object-cover z-[-1] dark:bg-dark ">
+                <source src="https://videos.pexels.com/video-files/6737399/6737399-uhd_2732_1440_24fps.mp4" type="video/mp4" />
+    </video> -->
+
+    <img src="./Images/main-banner.jpg" class="main-banner absolute top-0 left-0 w-full h-screen object-cover z-[-1] dark:bg-dark ">
+
+
+    <!-- Navbar -->
+    <nav class="bg-white border-gray-200 dark:bg-transparent dark:border-gray-700 shadow-sm">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 fixed right-5">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse fixed left-10">
+                <img src="./Images/logoT.png" class="h-12 rounded-lg " alt="Flowbite Logo" />
+                <div class="block">
+                    <span
+                        class="shadow-sm hover:dark:text-lime-300 ename self-center text-2xl font-semibold whitespace-nowrap dark:text-lime-500 p-0 mb-0 tracking-wider font-normal">EliteMoments</span>
+                    <h6 class="text-sm mt-0 pt-0 enamesub dark:text-lime-600">Event Management</h6>
+                </div>
+            </a>
+            <button data-collapse-toggle="navbar-multi-level" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-multi-level" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto " id="navbar-multi-level">
+                <ul
+                    class=" flex flex-col font-medium p-5 md:p-3 mt-2 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-200 md:dark:bg-transparent dark:border-gray-700">
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-lime-500 dark:bg-blue-600 md:dark:bg-transparent"
+                            aria-current="page">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#about"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 dark:text-white md:dark:hover:text-lime-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="./login.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-lime-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">LOGIN</a>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-lime-500 dark:focus:text-lime-500 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">SERVICES
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar"
+                            class="z-10 hidden font-extrabold bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-transparent dark:divide-gray-600 offcanva-p">
+                            <ul class="py-2 text-sm text-gray-600 dark:text-gray-800"
+                                aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Wedding
+                                        Planners</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Corporate
+                                        Event Management</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Photography
+                                        & Videography</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Catering
+                                        Services</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Music
+                                        & Entertainment</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Private
+                                        Parties</a>
+                                </li>
+                            </ul>
+                            <div class="py-1">
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-300 dark:bg-gray-950  dark:hover:bg-gray-900 dark:text-gray-200 dark:hover:text-white">Sign
+                                    out</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="booking.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-lime-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">BOOKING</a>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar2"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-lime-500 dark:focus:text-lime-500 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">GALLARY
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar2"
+                            class="z-10 hidden font-extrabold bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-44 dark:bg-transparent dark:divide-gray-600 offcanva-p">
+                            <ul class="py-2 text-sm text-gray-600 dark:text-gray-800"
+                                aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Photo
+                                        Gallary</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Video
+                                        Gallary</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Wedding
+                                        Albums</a>
+                                </li>
+                            </ul>
+                            <div class="py-1">
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-300 dark:bg-gray-950  dark:hover:bg-gray-900 dark:text-gray-200 dark:hover:text-white">Sign
+                                    out</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./contact.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-lime-700 md:p-0 dark:text-white md:dark:hover:text-lime-500 dark:hover:bg-lime-700 dark:hover:text-white md:dark:hover:bg-transparent">CONTACT</a>
+                    </li>
+                    <!-- navbar 4lines -->
+                    <div class="text-center">
+                        <button
+                            class="text-white hover:bg-transparent  text-sm px-5 dark:bg-transparent dark:hover:bg-transparent focus:outline-none dark:focus:bg-transparent"
+                            type="button" data-drawer-target="drawer-disabled-backdrop"
+                            data-drawer-toggle="drawer-disabled-backdrop" aria-controls="drawer-disabled-backdrop">
+                            <svg class="w-6 h-6 dark:text-white hover:text-lime-900 hover:text-lg" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                        </button>
+
+                    </div>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </nav>
+
+<!-- offcanvas -->
+<div id="drawer-disabled-backdrop" class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-neutral-200  md:w-md md:dark:bg-white" tabindex="-1" aria-labelledby="drawer-disabled-backdrop-label">
+    <span class="shadow-sm hover:dark:text-lime-300 ename self-center text-2xl font-semibold whitespace-nowrap dark:text-lime-500 p-0 mb-0 tracking-wider  font-normal">EliteMoments</span>
+    <h6 class="text-sm mt-0 pt-0 enamesub dark:text-lime-600">Event Management</h6>
+    <button type="button" data-drawer-hide="drawer-disabled-backdrop" aria-controls="drawer-disabled-backdrop" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white" >
+      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+      </svg>
+      <span class="sr-only">Close menu</span>
+   </button>
+  <div class="py-4 overflow-y-auto">
+      <ul class="space-y-2 font-medium">
+         <li>
+            <p class="sm:text-sm md:text-sm text-justify offcanva-p">EliteMoments is your trusted partner in crafting unforgettable events across Kerala. From elegant weddings to vibrant birthdays and corporate gatherings, we specialize in turning your ideas into beautifully executed celebrations. With a passionate team and attention to every detail, EliteMoments ensures that each occasion becomes a cherished memory.</p>
+         </li>
+         <li>
+            <button type="button" class="flex items-center w-full p-2 text-base text-gray-900 md:dark:text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-white" aria-controls="dropdown-example" data-collapse-toggle="dropdown-example">
+                 
+                 <i class="fa-solid fa-phone"></i>
+                  <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap offcanva-p  md:dark:text-gray-900 ">+91-874-001-1011</span>
+                  
+            </button>
+            
+         </li>
+         <li>
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-dark hover:bg-white dark:hover:bg-white group">
+               <i class="fa-solid fa-envelope"></i>
+               <span class="flex-1 md:ms-3 whitespace-nowrap offcanva-p md:dark:text-gray-900 dark:hover:bg-white">emomentseventmanagement@gmail.com</span>
+            </a>
+         </li>
+         <li><h1 class="md:text-3xl text-gray-400  dark:hover:text-gray-950 offcan-items">Venues</h1></li>
+         <li><h1 class="md:text-3xl text-gray-400 dark:hover:text-gray-950 offcan-items">Gallary</h1></li>
+         <li><h1 class="md:text-3xl text-gray-400 dark:hover:text-gray-950 offcan-items">Services</h1></li>
+         <li><h1 class="md:text-3xl text-gray-400 dark:hover:text-gray-950 offcan-items">Booking</h1></li>
+
+         <div class="md:flex justify-around md:my-10">
+         <li>
+            <a href="./login.html" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-gray-800 hover:bg-gray-200 dark:hover:bg-white group">
+               <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 8h11m0 0L8 4m4 4-4 4m4-11h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3"/>
+               </svg>
+               <span class="flex-1 ms-3 whitespace-nowrap">Log In</span>
+            </a>
+         </li>
+         <li>
+            <a href="./register.html" class="flex items-center p-2  text-gray-900 rounded-lg dark:text-gray-800 hover:bg-gray-100 dark:hover:bg-white group">
+               <svg class="shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-dark" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.96 2.96 0 0 0 .13 5H5Z"/>
+                  <path d="M6.737 11.061a2.961 2.961 0 0 1 .81-1.515l6.117-6.116A4.839 4.839 0 0 1 16 2.141V2a1.97 1.97 0 0 0-1.933-2H7v5a2 2 0 0 1-2 2H0v11a1.969 1.969 0 0 0 1.933 2h12.134A1.97 1.97 0 0 0 16 18v-3.093l-1.546 1.546c-.413.413-.94.695-1.513.81l-3.4.679a2.947 2.947 0 0 1-1.85-.227 2.96 2.96 0 0 1-1.635-3.257l.681-3.397Z"/>
+                  <path d="M8.961 16a.93.93 0 0 0 .189-.019l3.4-.679a.961.961 0 0 0 .49-.263l6.118-6.117a2.884 2.884 0 0 0-4.079-4.078l-6.117 6.117a.96.96 0 0 0-.263.491l-.679 3.4A.961.961 0 0 0 8.961 16Zm7.477-9.8a.958.958 0 0 1 .68-.281.961.961 0 0 1 .682 1.644l-.315.315-1.36-1.36.313-.318Zm-5.911 5.911 4.236-4.236 1.359 1.359-4.236 4.237-1.7.339.341-1.699Z"/>
+               </svg>
+               <span class="flex-1 ms-3 whitespace-nowrap">Sign Up</span>
+            </a>
+         </li>
+         </div>
+
+         <div class="flex justify-around mt-20">
+         <li>
+            <a href="#" class="flex items-center text-2xl p-2 text-gray-900 rounded-lg dark:text-dark hover:bg-gray-100 dark:hover:bg-white group">
+               <i class="fa-brands fa-square-instagram"></i>
+               
+            </a>
+         </li>
+         <li>
+            <a href="#" class="flex items-center text-2xl p-2 text-gray-900 rounded-lg dark:text-dark hover:bg-gray-100 dark:hover:bg-white group">
+               <i class="fa-brands fa-facebook"></i>
+               
+            </a>
+         </li>
+         <li>
+            <a href="#" class="flex items-center text-2xl p-2 text-gray-900 rounded-lg dark:text-dark hover:bg-gray-100 dark:hover:bg-white group">
+               <i class="fa-brands fa-youtube"></i>
+              
+            </a>
+         </li>
+         </div>
+         
+      </ul>
+   </div>
+</div>
+
+<!-- Banner Image -->
+ 
+<div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56 ">
+    
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl pt-24">
+            Make Your Moments Memorable</h1>
+        <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">From elegant weddings to
+            vibrant birthday celebrations, we take care of every detail so you can focus on making memories.
+            Book your next event effortlessly and experience the joy of stress-free planning with our expert
+            team by your side..</p>
+
+
+
+        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+            <a href="#"
+                class="inline-flex justify-center items-center py-2 px-5 text-base font-medium text-center text-white rounded-lg bg-lime-600 hover:bg-lime-500 focus:ring-4 focus:ring-lime-600 dark:focus:ring-lime-600">
+                Contact Us
+                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+            </a>
+            <a href="#"
+                class="inline-flex justify-center hover:text-gray-900 items-center py-2 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+                Learn more
+            </a>
+
+        </div>
+        <div>
+
+            <div class="flex justify-center -space-x-4 rtl:space-x-reverse pt-10">
+                <img class="w-10 h-10 border border-white rounded-full dark:border-gray-800"
+                    src="https://images.pexels.com/photos/30029366/pexels-photo-30029366.jpeg?cs=srgb&dl=pexels-mlkbnl-30029366.jpg&fm=jpg"
+                    alt="">
+                <img class="w-10 h-10 border border-white rounded-full dark:border-gray-800"
+                    src="https://lirp.cdn-website.com/846c4f9c/dms3rep/multi/opt/GettyImages-522549708-1920w.jpg"
+                    alt="">
+                <img class="w-10 h-10 border border-white rounded-full dark:border-gray-800"
+                    src="https://s1.r29static.com/bin/entry/62d/0,383,3011,1581/x,80/2159517/your-complete-guide-to-the-2159517.jpg"
+                    alt="">
+                <a class="flex items-center justify-center w-10 h-10 text-xs font-medium text-white bg-gray-950 border border-white rounded-full hover:bg-gray-800 dark:border-gray-800"
+                    href="#">+99</a>
+                <!-- Rating -->
+
+
+                <div class="flex items-center pl-11">
+                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <p class="ms-1 md:text-lg text-sm font-extrabold text-gray-950 dark:text-white">4.8/5</p>
+                    <p class="ms-1 ms:text-lg text-sm font-extrabold text-gray-800 dark:text-white">Rating</p>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    
+</section>
+
+
+
+
+
+<div class="fixed bottom-8  right-5 transform -translate-x-1/2 ">
+  <a href="#your-link" class="bg-transparent text-white p-4 rounded-full ">
+   
+    <i class="fa-brands fa-whatsapp text-5xl w-2 text-green-700 "></i>
+    </svg>
+  </a>
+</div>
+</section>
+
+
+
+<!-- Achievement -->
+<section id="grades">
+   
+<div class="w-full bg-white  shadow-sm dark:bg-gray-800 dark:border-white">
+   <div class=" p-4 bg-white md:p-8 dark:bg-white" role="tabpanel" aria-labelledby="stats-tab">
+            <dl class="grid max-w-screen-xl grid-cols-2 gap-8 p-4 mx-auto text-gray-900 sm:grid-cols-3 xl:grid-cols-6 dark:text-dark sm:p-8">
+                <div class="flex flex-col items-center justify-center">
+                    <dt class="mb-2 text-3xl font-extrabold">10+</dt>
+                    <dd class="text-gray-500 dark:text-gray-400">Years of Experience</dd>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <dt class="mb-2 text-3xl font-extrabold">1.4K+</dt>
+                    <dd class="text-gray-500 dark:text-gray-400">Events Covered</dd>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <dt class="mb-2 text-3xl font-extrabold">1.2K+</dt>
+                    <dd class="text-gray-500 dark:text-gray-400">Satisfied Clients</dd>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <dt class="mb-2 text-3xl font-extrabold">4.8</dt>
+                    <dd class="text-gray-500 dark:text-gray-400">Customer Rating</dd>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <dt class="mb-2 text-3xl font-extrabold">100K+</dt>
+                    <dd class="text-gray-500 dark:text-gray-400">Social Media Followers</dd>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <dt class="mb-2 text-3xl font-extrabold">50+</dt>
+                    <dd class="text-gray-500 dark:text-gray-400"> Team Members</dd>
+                </div>
+            </dl>
+        </div>
+        
+        
+    </div>
+
+
+
+</section>
+
+<!-- About -->
+ 
+
+<section id="about" class=" mask-radial-[100%_100%] mask-radial-from-85% mask-radial-at-bottom bg-white dark:bg-gray-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://cdn.pixabay.com/photo/2022/04/24/05/18/embroidered-road-7152910_1280.jpg')]">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
+        <div class="flex justify-center">
+        <img src="./Images/logoT.png" alt="logo" class="h-20 w-20 mb-5 rounded-full"></div>
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-4xl dark:text-white">EVENT MANAGEMENT COMPANY IN KERALA</h1>
+        <h2 class="tracking-tight text-2xl font-medium md:text-green-900">Create Unforgettable Moments with Elitemoments</h2>
+        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-200">Have you ever dreamed of planning the perfect event that leaves a lasting impression? Elitemoments is your go-to event management partner in Kerala, dedicated to turning your vision into reality. Whether it's a grand wedding, a corporate gathering, or a private celebration, we bring creativity, precision, and passion to every detail.
+
+From fully customized event packages to seamless coordination, we ensure your special moments are not just celebrated—but remembered forever. Get in touch with us today to discover how we can help you craft the most memorable events in Kerala.</p>
+       
+    </div>
+    <div class="bg-gradient-to-b from-blue-50 to-transparent dark:from-blue-900 w-full h-full absolute top-0 left-0 z-0"></div>
+</section>
+
+
+<!-- Image
+
+<div class="flex items-center gap-4 ">
+  <img class="mask-radial-[100%_100%] mask-radial-from-50% mask-radial-at-left ..." src="https://cdn.pixabay.com/photo/2022/08/24/07/00/park-7407081_1280.jpg" />
+  <div class="font-medium">
+    <p class="font-mono text-xs text-blue-500 uppercase dark:text-blue-400">Speed</p>
+    <p class="mt-2 text-base text-gray-700 dark:text-gray-300">Built for power users</p>
+    <p class="mt-1 text-sm leading-relaxed text-balance text-gray-500">
+      Work faster than ever with customizable keyboard shortcuts
+    </p>
+  </div>
+</div> -->
+
+<!-- Carousel -->
+
+<!-- Types -->
+<div class="flex flex-col md:flex-row bg-dark min-h-screen">
+  
+  <div class="md:w-1/3 h-64 md:h-auto bg-cover bg-center mask-radial-[100%_100%] mask-radial-from-50% mask-radial-at-left bg-no-repeat bg-[url('https://cdn.pixabay.com/photo/2017/05/08/10/43/people-2295052_1280.jpg')]">
+  </div>
+
+  <div class="md:w-2/3 flex justify-center items-center p-4">
+    <div class="space-y-6 w-full max-w-4xl">
+
+      <a href="#" class="flex flex-col md:flex-row bg-white hover:bg-gray-100 shadow rounded-lg overflow-hidden">
+        <div class="p-4 flex flex-col justify-between">
+          <h5 class="text-2xl font-bold text-gray-900">WEDDINGS</h5>
+          <p class="text-gray-700">At EliteMoments, we craft unforgettable weddings with personalized themes, stunning décor, catering, photography, and seamless coordination — making your special day truly magical.</p>
+        </div>
+        <img class="object-cover w-full md:w-48 h-64 md:h-auto rounded-t-lg md:rounded-none md:rounded-r-lg" src="https://i.pinimg.com/originals/c1/e8/49/c1e849c78dba03d4787de5a699a12939.png" alt="">
+      </a>
+
+      <a href="#" class="flex flex-col md:flex-row bg-white hover:bg-gray-100 shadow rounded-lg overflow-hidden">
+        <img class="object-cover w-full md:w-48 h-64 md:h-auto rounded-t-lg md:rounded-none md:rounded-l-lg" src="https://cdn.pixabay.com/photo/2016/11/18/22/21/bride-1837148_1280.jpg" alt="">
+        <div class="p-4 flex flex-col justify-between">
+          <h5 class="text-2xl font-bold text-gray-900">ENGAGEMENT CEREMONIES</h5>
+          <p class="text-gray-700">Celebrate the beginning of your forever with EliteMoments. We design beautiful engagement events with elegant décor, curated themes, photography, and flawless coordination — making your special moment truly memorable.</p>
+        </div>
+      </a>
+
+      <a href="#" class="flex flex-col md:flex-row bg-white hover:bg-gray-100 shadow rounded-lg overflow-hidden">
+        <div class="p-4 flex flex-col justify-between">
+          <h5 class="text-2xl font-bold text-gray-900">BIRTHDAY PARTIES</h5>
+          <p class="text-gray-700">Celebrate in style with EliteMoments — fun themes, vibrant décor, and joyful moments for all ages!</p>
+        </div>
+        <img class="object-cover w-full md:w-48 h-64 md:h-auto rounded-t-lg md:rounded-none md:rounded-r-lg" src="https://cdn.pixabay.com/photo/2023/03/14/23/56/kids-7853414_1280.jpg" alt="">
+      </a>
+
+      <a href="#" class="flex flex-col md:flex-row bg-white hover:bg-gray-100 shadow rounded-lg overflow-hidden">
+        <img class="object-cover w-full md:w-48 h-64 md:h-auto rounded-t-lg md:rounded-none md:rounded-l-lg" src="https://cdn.pixabay.com/photo/2018/09/05/08/05/party-3655712_1280.jpg" alt="">
+        <div class="p-4 flex flex-col justify-between">
+          <h5 class="text-2xl font-bold text-gray-900">CORPORATE EVENTS</h5>
+          <p class="text-gray-700">Professional, seamless, and impactful — EliteMoments delivers top-tier corporate events from conferences to product launches with perfect execution.</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- 
+<div class="flex justify-between">
+<div class="grid grid-cols-6 md:grid-cols-7 gap-2 p-2 border border-gray-800">
+  <div class="grid gap-2">
+    <img class="w-full rounded-md" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
+    <img class="w-full rounded-md" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
+    <img class="w-full rounded-md" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
+  </div>
+  <div class="grid gap-2">
+    <img class="w-full rounded-md" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
+    <img class="w-full rounded-md" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
+    <img class="w-full rounded-md" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
+  </div>
+  <div class="grid gap-2">
+    <img class="w-full rounded-md" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+    <img class="w-full rounded-md" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
+    <img class="w-full rounded-md" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
+  </div>
+  <div class="grid gap-2">
+    <img class="w-full rounded-md" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
+    <img class="w-full rounded-md" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
+    <img class="w-full rounded-md" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
+  </div>
+
+
+
+</div> -->
+
+  
+
+
+<div id="default-carousel" class="relative w-full" data-carousel="slide">
+  <!-- Carousel wrapper -->
+  <div class="relative h-64 md:h-[400px] overflow-hidden">
+    <!-- Item 1 -->
+    <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+      <img src="./Images/carous-1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+    </div>
+    <!-- Item 2 -->
+    <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+      <img src="./Images/carous-2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+    </div>
+    <!-- Item 3 -->
+    <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+      <img src="./Images/carousel-2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+    </div>
+    <!-- Item 4 -->
+    <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+      <img src="./Images/carous-4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+    </div>
+    <!-- Item 5 -->
+    <div class="hidden duration-1000 ease-in-out" data-carousel-item>
+      <img src="./Images/carous-5.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+    </div>
+  </div>
+</div>
+
+
+<section class="bg-white py-12 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">🌟 Upcoming Events</h2>
+    <div class="grid gap-8 md:grid-cols-3 sm:grid-cols-2">
+      
+      <!-- Event Card 1 -->
+      <div class="bg-gray-100 rounded-2xl shadow-lg overflow-hidden transition-transform hover:scale-105 duration-300">
+        <img class="w-full h-48 object-cover" src="https://cdn.pixabay.com/photo/2016/11/18/18/32/wedding-1836315_1280.jpg" alt="Wedding Event">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-gray-800">Grand Wedding Ceremony</h3>
+          <p class="text-sm text-gray-600 mt-2">Join us for a magical wedding event full of elegance and celebration.</p>
+        </div>
+      </div>
+
+      <!-- Event Card 2 -->
+      <div class="bg-gray-100 rounded-2xl shadow-lg overflow-hidden transition-transform hover:scale-105 duration-300">
+        <img class="w-full h-48 object-cover" src="https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg" alt="Photography Session">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-gray-800">Creative Photography Day</h3>
+          <p class="text-sm text-gray-600 mt-2">Capture memories with our pro photography team and themed shoots.</p>
+        </div>
+      </div>
+
+      <!-- Event Card 3 -->
+      <div class="bg-gray-100 rounded-2xl shadow-lg overflow-hidden transition-transform hover:scale-105 duration-300">
+        <img class="w-full h-48 object-cover" src="./Images/birthday.jpg" alt="Birthday Party">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-gray-800">Colorful Birthday Bash</h3>
+          <p class="text-sm text-gray-600 mt-2">A fun-filled birthday celebration with games, music, and cake!</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer>
+
+
+<footer class="bg-white dark:bg-gray-100">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 offcanva-p">
+        <div class="md:flex md:justify-around">
+          
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4">
+             <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-dark">Quick Links</h2>
+                  <ul class="text-gray-500 dark:text-gray-800 font-medium">
+                      <li class="mb-4">
+                          <a href="https://flowbite.com/" class="hover:underline">Home</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="https://tailwindcss.com/" class="hover:underline">About</a>
+                      </li>
+                       <li class="mb-4">
+                          <a href="https://flowbite.com/" class="hover:underline">Venues</a>
+                      </li>
+                       <li class="mb-4">
+                          <a href="https://flowbite.com/" class="hover:underline">Gallary</a>
+                      </li>
+                       <li class="mb-4">
+                          <a href="https://flowbite.com/" class="hover:underline">contact</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-dark">Services</h2>
+                  <ul class="text-gray-500 dark:text-gray-800 font-medium">
+                      <li class="mb-4">
+                          <a href="https://flowbite.com/" class="hover:underline">Wedding Planners</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="https://tailwindcss.com/" class="hover:underline">Corporate Events</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="https://tailwindcss.com/" class="hover:underline">Birthday Events</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="https://tailwindcss.com/" class="hover:underline">Photography</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-dark">Follow us</h2>
+                  <ul class="text-gray-500 dark:text-gray-800 font-medium">
+                      <li class="mb-4">
+                          <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Instagram</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Youtube</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Facebook</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-dark">Contact Us</h2>
+                  <ul class="text-gray-500 dark:text-gray-800 font-medium">
+                      <li class="mb-4">
+                         <p>EliteMoments Eventmanagement, central Junction, Kakkanad, Kochi, Kerala 682037</p>
+                      </li>
+                      <li class="mt-20 text-lg">
+                          <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+  © 2025 <a href="#" class="hover:underline font-semibold">EliteMoments™</a>. All Rights Reserved.
+</span>
+
+          <div class="flex mt-4 sm:justify-center sm:mt-0">
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                        <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                    </svg>
+                  <span class="sr-only">Facebook page</span>
+              </a>
+              
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                    <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+                </svg>
+                  <span class="sr-only">Twitter page</span>
+              </a>
+              
+              
+          </div>
+      </div>
+    </div>
+</footer>
+
+
+</footer>
+
+
+
+
+    <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
+    <!-- Icons -->
+     <ion-icon src="/path/to/external/file.svg"></ion-icon>
+     <!-- AOS -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>
