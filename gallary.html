@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .card-img {
+      height: 260px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body class="bg-[#fdfcf7] text-gray-800">
+
+     <!-- Navbar -->
+    <nav class="bg-white border-gray-200 dark:bg-transparent dark:border-gray-700 shadow-sm ">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 fixed right-5">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse fixed left-10">
+                <img src="./Images/logoT.png" class="h-12 rounded-lg " alt="Flowbite Logo" />
+                <div class="block">
+                    <span
+                        class="shadow-sm hover:dark:text-lime-300 ename self-center text-2xl font-semibold whitespace-nowrap dark:text-lime-500 p-0 mb-0 tracking-wider font-normal">EliteMoments</span>
+                    <h6 class="text-sm mt-0 pt-0 enamesub dark:text-lime-600">Event Management</h6>
+                </div>
+            </a>
+            <button data-collapse-toggle="navbar-multi-level" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-multi-level" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto " id="navbar-multi-level">
+                <ul
+                    class=" flex flex-col font-medium p-5 md:p-3 mt-2 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-200 md:dark:bg-transparent dark:border-gray-700">
+                    <li>
+                        <a href="./index.html"
+                            class="block py-2 px-3 text-dark bg-blue-700 rounded-sm md:bg-transparent md:text-dark md:p-0 md:dark:text-dark dark:bg-blue-600 md:dark:bg-transparent"
+                            aria-current="page">HOME</a>
+                    </li>
+                    <li>
+                        <a href="./index.html/#about"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 dark:text-dark md:dark:hover:text-lime-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="./login.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-dark md:dark:hover:text-lime-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">LOGIN</a>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-dark md:dark:hover:text-lime-500 dark:focus:text-lime-500 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">SERVICES
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar"
+                            class="z-10 hidden font-extrabold bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-transparent dark:divide-gray-600 offcanva-p">
+                            <ul class="py-2 text-sm text-gray-600 dark:text-gray-800"
+                                aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="./service/service.html"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Wedding
+                                        Planners</a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Corporate
+                                        Event Management</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Photography
+                                        & Videography</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Catering
+                                        Services</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Music
+                                        & Entertainment</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Private
+                                        Parties</a>
+                                </li>
+                            </ul>
+                            <div class="py-1">
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-300 dark:bg-gray-950  dark:hover:bg-gray-900 dark:text-gray-200 dark:hover:text-white">Sign
+                                    out</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./booking.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-dark md:dark:hover:text-lime-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">BOOKING</a>
+                    </li>
+                    <li>
+                        <a href="./venue/event.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-dark md:dark:hover:text-lime-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">VENUES</a>
+                    </li>
+                    <li>
+                        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar2"
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-dark md:dark:hover:text-lime-500 dark:focus:text-lime-500 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">GALLARY
+                            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownNavbar2"
+                            class="z-10 hidden font-extrabold bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-44 dark:bg-transparent dark:divide-gray-600 offcanva-p">
+                            <ul class="py-2 text-sm text-gray-600 dark:text-gray-800"
+                                aria-labelledby="dropdownLargeButton">
+                                <li>
+                                    <a href="#photo"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Photo
+                                        Gallary</a>
+                                </li>
+                                <li>
+                                    <a href="#vedio"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Video
+                                        Gallary</a>
+                                </li>
+                                <li>
+                                    <a href="#albums"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Wedding
+                                        Albums</a>
+                                </li>
+                            </ul>
+                            <div class="py-1">
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-300 dark:bg-gray-950  dark:hover:bg-gray-900 dark:text-gray-200 dark:hover:text-white">Sign
+                                    out</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./contact.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-lime-700 md:p-0 dark:text-dark md:dark:hover:text-lime-500 dark:hover:bg-lime-700 dark:hover:text-white md:dark:hover:bg-transparent">CONTACT</a>
+                    </li>
+                    <!-- navbar 4lines -->
+                    <div class="text-center">
+                        <button
+                            class="text-dark hover:bg-transparent  text-sm px-5 dark:bg-transparent dark:hover:bg-transparent focus:outline-none dark:focus:bg-transparent"
+                            type="button" data-drawer-target="drawer-disabled-backdrop"
+                            data-drawer-toggle="drawer-disabled-backdrop" aria-controls="drawer-disabled-backdrop">
+                            <svg class="w-6 h-6 dark:text-dark hover:text-lime-900 hover:text-lg" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                        </button>
+
+                    </div>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </nav>
+
+
+  <!-- Gallery Section -->
+  <section class="text-center pt-32 px-4 pt-10">
+    <h2 class="text-4xl md:text-5xl font-bold tracking-wide text-green-800 mb-3 drop-shadow-[2px_2px_2px_black]">GALLERY</h2>
+    <p class="text-lg text-green-600 mb-6">Collection of cherished memories and spectacular moments. Whether it's the elegance of a wedding, the excitement of a corporate gala, or the warmth of a family gathering — every frame tells a story.
+
+Explore our Photo Gallery filled with captivating snapshots, watch magical moments unfold in our Video Gallery, and relive timeless memories through our beautifully crafted Wedding Albums.</p>
+    <hr class="border-green-300 w-1/4 mx-auto mb-12" />
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      
+      <!-- Image Card -->
+      <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition transform hover:scale-105 duration-300">
+        <img src="https://cdn.pixabay.com/photo/2022/12/16/02/44/wedding-7658831_1280.jpg" alt="board" class="card-img w-full">
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition transform hover:scale-105 duration-300">
+        <img src="https://cdn.pixabay.com/photo/2023/09/16/17/15/wedding-8257183_1280.jpg" alt="ooooo" class="card-img w-full">
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition transform hover:scale-105 duration-300">
+        <img src="https://i.shgcdn.com/bc4b239c-a7e2-436a-884e-c0b4081e75c1/-/format/auto/-/preview/3000x3000/-/quality/lighter/" alt="ring" class="card-img w-full">
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition transform hover:scale-105 duration-300">
+        <img src="https://cdn.pixabay.com/photo/2016/08/03/10/19/bouquet-1566272_1280.jpg" alt="rose" class="card-img w-full">
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition transform hover:scale-105 duration-300">
+        <img src="https://breakout.in/wp-content/uploads/2023/04/Children-enjoying-escape-room.jpeg" alt="stage" class="card-img w-full">
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition transform hover:scale-105 duration-300">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.8j0kgHTSWfkfF7MkwR6BEgHaH9?r=0&w=605&h=650&rs=1&pid=ImgDetMain&o=7&rm=3" alt="table" class="card-img w-full">
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition transform hover:scale-105 duration-300">
+        <img src="https://cdn.pixabay.com/photo/2014/04/10/15/37/snowman-321034_1280.jpg" alt="ansh" class="card-img w-full">
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition transform hover:scale-105 duration-300">
+        <img src="https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2022/06/29/0849/BIQUB-P0654-Wedding-Reception-Dining-Tables-Plants.jpg/BIQUB-P0654-Wedding-Reception-Dining-Tables-Plants.4x3.jpg" alt="food" class="card-img w-full">
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition transform hover:scale-105 duration-300">
+        <img src="https://i.pinimg.com/originals/da/82/49/da82496545c17ded1ac000ba5504c9ed.jpg" alt="brides" class="card-img w-full">
+      </div>
+
+      <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition transform hover:scale-105 duration-300">
+        <img src="https://www.weddingsutra.com/images/emotional-wedding-moments-pic31.jpg" alt="item" class="card-img w-full">
+      </div>
+      <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition transform hover:scale-105 duration-300">
+        <img src="https://img.freepik.com/premium-photo/marquee-wedding_863013-144866.jpg" alt="item" class="card-img w-full">
+      </div>
+      <div class="bg-white rounded-2xl overflow-hidden shadow hover:shadow-xl transition transform hover:scale-105 duration-300">
+        <img src="https://media.istockphoto.com/photos/wedding-flower-picture-id153705126?k=20&m=153705126&s=612x612&w=0&h=ERZ927ZnvaUi7IQb0xb6AcA7H27gF5VYl1C3lw-aTso=" alt="item" class="card-img w-full">
+      </div>
+
+    </div>
+  </section>
+  <section class="bg-[#fdfcf7] py-16 px-4 text-center">
+  
+
+  <!-- 📸 Photo Gallery -->
+  <div class="mb-16" id="photo">
+    <h3 class="text-3xl font-semibold text-green-700 mb-3">Photo Gallery</h3>
+    <p class="text-gray-600 max-w-xl mx-auto mb-6">
+      Dive into stunning snapshots that capture magical moments from our events — from candid emotions to decorative highlights.
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+      <!-- Add your images here -->
+      <img src="https://cdn.pixabay.com/photo/2016/11/19/11/11/dua-lipa-1838653_1280.jpg" alt="Photo 1" class="rounded-xl shadow-md object-cover h-64 w-full">
+      <img src="https://www.weddingsutra.com/images/wedding-images/real_wed/featured/isha-udit/isha-udit-img14.jpg" alt="Photo 2" class="rounded-xl shadow-md object-cover h-64 w-full">
+      <img src="https://cdn0.weddingwire.in/vendor/4495/3_2/960/jpeg/profile_15_364495-169304078324193.jpeg" alt="Photo 3" class="rounded-xl shadow-md object-cover h-64 w-full">
+    </div>
+     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-7xl mx-auto mt-10">
+      <!-- Add your images here -->
+      <img src="https://cdn.gusmank.com/2024/JEE/indian-wedding-in-uluwatu-bali-008.jpg" alt="Photo 1" class="rounded-xl shadow-md object-cover h-64 w-full">
+      <img src="https://wallpapers.com/images/hd/birthday-party-background-i8t199ug5w21s5jy.jpg" alt="Photo 2" class="rounded-xl shadow-md object-cover h-64 w-full">
+      <img src="https://fotolux.pt/wp-content/uploads/2022/09/pakistani_baraat_penha_longa-28.jpg" alt="Photo 3" class="rounded-xl shadow-md object-cover h-64 w-full">
+    </div>
+    
+  </div>
+
+  <!-- 🎥 Video Gallery -->
+  <div class="mb-16" id="vedio">
+    <h3 class="text-3xl font-semibold text-green-700 mb-3">Video Gallery</h3>
+    <p class="text-gray-600 max-w-xl mx-auto mb-6">
+      Experience the energy and atmosphere through curated highlight reels and cinematic event clips.
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+      <!-- Example YouTube embed or video tag -->
+      <iframe class="w-full h-54 rounded-xl shadow-md" src="https://www.youtube.com/embed/sample1" allowfullscreen></iframe>
+      <iframe class="w-full h-54 rounded-xl shadow-md" src="https://www.youtube.com/embed/sample2" allowfullscreen></iframe>
+      <iframe class="w-full h-54 rounded-xl shadow-md" src="https://www.youtube.com/embed/sample3" allowfullscreen></iframe>
+      
+    </div>
+
+    
+  </div>
+
+  <!-- 💍 Wedding Albums -->
+  <div id="albums">
+    <h3 class="text-3xl font-semibold text-green-700 mb-3">Wedding Albums</h3>
+    <p class="text-gray-600 max-w-xl mx-auto mb-6">
+      Explore our beautifully curated wedding albums, filled with timeless memories and elegant moments.
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+      <!-- Example album covers -->
+      <img src="https://www.printique.com/wp-content/uploads/2021/06/MicrosoftTeams-image-10-copy-2-1.jpg" alt="Album 1" class="rounded-xl shadow-md object-cover h-64 w-full">
+      <img src="https://www.kahumbu.co.uk/wp-content/uploads/2020/06/Album-Collage-1.jpg" alt="Album 2" class="rounded-xl shadow-md object-cover h-64 w-full">
+      <img src="https://imagelana.com/wp-content/uploads/2022/12/trouwfotoboek_maken-60173.jpg" alt="Album 3" class="rounded-xl shadow-md object-cover h-64 w-full">
+    </div>
+  </div>
+</section>
+
+<script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
+</body>
+</html>

@@ -8,10 +8,7 @@
   <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Manufacturing+Consent&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Special+Gothic+Expanded+One&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet">
-    <!-- GoogleFonts -->
+  <!-- GoogleFonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Archivo+Black&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Caveat:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Libertinus+Math&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lilita+One&family=Poller+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rammetto+One&family=Sevillana&display=swap" rel="stylesheet">
@@ -21,10 +18,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
    <style>
-    *
-    {
-        font-family: "Winky Sans", sans-serif;
-    }
+  *{
+     font-family: "Jost", sans-serif;
+}
     
 /* Navbar stays fixed on top with white background */
 nav {
@@ -33,14 +29,13 @@ nav {
   width: 100%;
   background-color: white;
   z-index: 1000;
-  padding: 2px 0;
+  padding: 10px 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  font-family: "Poller One", sans-serif;
 }
 
 /* Ensure the form is pushed below navbar */
 form {
-  margin-top: 120px; /* Adjust this based on navbar height */
+  margin-top: 100px; /* Adjust this based on navbar height */
 }
 
 /* Navigation links styling */
@@ -50,6 +45,12 @@ nav ul {
   justify-content: flex-end;
   gap: 25px;
   padding-right: 50px;
+}
+ .ename{
+    font-family: "Poller One", sans-serif;
+}
+.enamesub{
+    font-family: "Caveat", cursive;
 }
 
 nav ul li a {
@@ -61,38 +62,50 @@ nav ul li a {
 
   
 </head>
+<body>
+   
 
-   <nav class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-md">
-  <div class="max-w-screen-xl mx-auto flex items-center justify-between px-6 py-3">
-    <!-- Logo -->
-    <a href="./index.html" class="flex items-center space-x-3">
-      <img src="./images/logoT.png" class="h-12 rounded-lg" alt="Logo" />
-      <div>
-        <span class="text-2xl font-semibold text-lime-700">EliteMoments</span>
-        <h6 class="text-sm text-lime-600 -mt-1">Event Management</h6>
-      </div>
-    </a>
-
-    <!-- Nav Links -->
-    <div class="hidden w-full md:block md:w-auto " id="navbar-multi-level">
+    <div class="min-h-screen bg-gradient-to-br from-white  flex items-center justify-center px-4">
+     
+      <nav class="bg-dark border-gray-200 dark:bg-gray-100 md:dark:border-blue-700 shadow-sm">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 fixed right-5">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse fixed left-10">
+                <img src="./Images/logoT.png" class="h-12 rounded-lg " alt="Flowbite Logo" />
+                <div class="block">
+                    <span
+                        class="shadow-sm hover:dark:text-lime-300 ename self-center text-2xl font-semibold whitespace-nowrap dark:text-lime-500 p-0 mb-0 tracking-wider font-normal">EliteMoments</span>
+                    <h6 class="text-sm mt-0 pt-0 enamesub dark:text-lime-600">Event Management</h6>
+                </div>
+            </a>
+            <button data-collapse-toggle="navbar-multi-level" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-multi-level" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto " id="navbar-multi-level">
                 <ul
                     class=" flex flex-col font-medium p-5 md:p-3 mt-2 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-200 md:dark:bg-transparent dark:border-gray-700">
                     <li>
                         <a href="./index.html"
-                            class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-lime-700 dark:bg-blue-600 md:dark:bg-transparent"
+                            class="block py-2 px-3 text-dark bg-blue-700 rounded-sm md:bg-transparent md:text-dark md:p-0 md:dark:text-dark dark:bg-blue-600 md:dark:bg-transparent"
                             aria-current="page">HOME</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 dark:text-dark md:dark:hover:text-lime-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">ABOUT</a>
+                        <a href="#about"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 dark:text-dark md:dark:hover:text-lime-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">ABOUT</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-dark md:dark:hover:text-lime-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">LOGIN</a>
+                        <a href="./login.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-dark md:dark:hover:text-lime-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">LOGIN</a>
                     </li>
                     <li>
                         <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
-                            class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-dark md:dark:hover:text-lime-700 dark:focus:text-lime-500 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">SERVICES
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-dark md:dark:hover:text-lime-500 dark:focus:text-lime-500 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">SERVICES
                             <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -101,10 +114,10 @@ nav ul li a {
                         <!-- Dropdown menu -->
                         <div id="dropdownNavbar"
                             class="z-10 hidden font-extrabold bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-transparent dark:divide-gray-600 offcanva-p">
-                            <ul class="py-2 text-sm text-gray-600 dark:text-gray-800"
+                            <ul class="block py-2 text-sm text-gray-600 dark:text-gray-800"
                                 aria-labelledby="dropdownLargeButton">
                                 <li>
-                                    <a href="#"
+                                    <a href="./service/service.html"
                                         class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Wedding
                                         Planners</a>
                                 </li>
@@ -143,12 +156,16 @@ nav ul li a {
                         </div>
                     </li>
                     <li>
-                        <a href="./booking.html"
-                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-dark md:dark:hover:text-lime-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">BOOKING</a>
+                        <a href="booking.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-dark md:dark:hover:text-lime-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">BOOKING</a>
+                    </li>
+                    <li>
+                        <a href="./venue/event.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-dark md:dark:hover:text-lime-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">VENUES</a>
                     </li>
                     <li>
                         <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar2"
-                            class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-dark md:dark:hover:text-lime-700 dark:focus:text-lime-500 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">GALLARY
+                            class="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-dark md:dark:hover:text-lime-500 dark:focus:text-lime-500 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">GALLARY
                             <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -157,7 +174,7 @@ nav ul li a {
                         <!-- Dropdown menu -->
                         <div id="dropdownNavbar2"
                             class="z-10 hidden font-extrabold bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-44 dark:bg-transparent dark:divide-gray-600 offcanva-p">
-                            <ul class="py-2 text-sm text-gray-600 dark:text-gray-800"
+                            <ul class="py-2 text-sm text-gray-600 dark:text-gray-800 block"
                                 aria-labelledby="dropdownLargeButton">
                                 <li>
                                     <a href="#"
@@ -183,8 +200,8 @@ nav ul li a {
                         </div>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-lime-700 md:p-0 dark:text-dark md:dark:hover:text-lime-700 dark:hover:bg-lime-700 dark:hover:text-white md:dark:hover:bg-transparent">CONTACT</a>
+                        <a href="./contact.html"
+                            class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-lime-700 md:p-0 dark:text-lime-700 md:dark:hover:text-lime-500 dark:hover:bg-lime-700 dark:hover:text-white md:dark:hover:bg-transparent">CONTACT</a>
                     </li>
                     <!-- navbar 4lines -->
                     <div class="text-center">
@@ -192,7 +209,7 @@ nav ul li a {
                             class="text-white hover:bg-transparent  text-sm px-5 dark:bg-transparent dark:hover:bg-transparent focus:outline-none dark:focus:bg-transparent"
                             type="button" data-drawer-target="drawer-disabled-backdrop"
                             data-drawer-toggle="drawer-disabled-backdrop" aria-controls="drawer-disabled-backdrop">
-                            <svg class="w-6 h-6 dark:text-gray-950 hover:text-lime-900 hover:text-lg" aria-hidden="true"
+                            <svg class="w-6 h-6 dark:text-white hover:text-lime-900 hover:text-lg" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
@@ -202,13 +219,13 @@ nav ul li a {
                     </div>
                 </ul>
             </div>
-  </div>
-</nav>
-
-    <div class="min-h-screen bg-gradient-to-br from-white  flex items-center justify-center px-4 pt-12 mt-6">
 
 
-    <div class="bg-[url('https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg')] bg-cover bg-center bg-no-repeat backdrop-blur-xl p-10 rounded-3xl shadow-2xl w-full max-w-2xl border border-white/10 transition-transform duration-500 hover:scale-[1.01]">
+        </div>
+
+    </nav>
+
+    <div class="bg-[url('https://cdn.pixabay.com/photo/2016/11/23/15/48/audience-1853662_1280.jpg')] bg-cover bg-center bg-no-repeat backdrop-blur-xl p-10 rounded-3xl shadow-2xl w-full max-w-2xl border border-white/10 transition-transform duration-500 hover:scale-[1.01] mt-20">
 
 
     <!-- Title -->
@@ -300,96 +317,134 @@ nav ul li a {
   </div>
 </div>
 
- 
+<h3 class="mt-4 mb-4" style="text-align: center; font-size: 40px; font-weight: bold; color: green;">
+  📍 Visit Us at This Location
+</h3>
+  
+
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.2720872234763!2d77.02756197437131!3d8.569815391474302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05b775a23d46a9%3A0x6fec0d6f3bbf8a55!2sEvent%20Plus!5e0!3m2!1sen!2sin!4v1753421970222!5m2!1sen!2sin"
+  width="100%"
+  height="450"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  class="mt-0">
+</iframe>
 
  
 
+ 
 
 
 
 
 
 
+<footer>
 
-  <footer class="bg-white text-gray-700">
-  <div class="mx-auto w-full max-w-screen-xl px-4 py-6 lg:py-8">
-    <div class="md:flex md:justify-between">
-      <div class="mb-6 md:mb-0">
-        <a href="#" class="flex items-center">
-          <img src="./images/logoT.png" class="h-20 me-3 " alt="Logo" />
-          <span class="self-center text-2xl font-semibold whitespace-nowrap text-gray-900">EliteMoments</span>
-        </a>
+
+<footer class="bg-white dark:bg-gray-100">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 offcanva-p">
+        <div class="md:flex md:justify-around">
+          
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4">
+             <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-dark">Quick Links</h2>
+                  <ul class="text-gray-500 dark:text-gray-800 font-medium">
+                      <li class="mb-4">
+                          <a href="https://flowbite.com/" class="hover:underline">Home</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="https://tailwindcss.com/" class="hover:underline">About</a>
+                      </li>
+                       <li class="mb-4">
+                          <a href="https://flowbite.com/" class="hover:underline">Venues</a>
+                      </li>
+                       <li class="mb-4">
+                          <a href="https://flowbite.com/" class="hover:underline">Gallary</a>
+                      </li>
+                       <li class="mb-4">
+                          <a href="https://flowbite.com/" class="hover:underline">contact</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-dark">Services</h2>
+                  <ul class="text-gray-500 dark:text-gray-800 font-medium">
+                      <li class="mb-4">
+                          <a href="https://flowbite.com/" class="hover:underline">Wedding Planners</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="https://tailwindcss.com/" class="hover:underline">Corporate Events</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="https://tailwindcss.com/" class="hover:underline">Birthday Events</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="https://tailwindcss.com/" class="hover:underline">Photography</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-dark">Follow us</h2>
+                  <ul class="text-gray-500 dark:text-gray-800 font-medium">
+                      <li class="mb-4">
+                          <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Instagram</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Youtube</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Facebook</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-dark">Contact Us</h2>
+                  <ul class="text-gray-500 dark:text-gray-800 font-medium">
+                      <li class="mb-4">
+                         <p>EliteMoments Eventmanagement, central Junction, Kakkanad, Kochi, Kerala 682037</p>
+                      </li>
+                      <li class="mt-20 text-lg">
+                          <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
       </div>
-      <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-        <div>
-          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
-          <ul class="text-gray-600 font-medium">
-            <li class="mb-4">
-              <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
-            </li>
-            <li>
-              <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow us</h2>
-          <ul class="text-gray-600 font-medium">
-            <li class="mb-4">
-              <a href="#" class="hover:underline">Github</a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline">Discord</a>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Legal</h2>
-          <ul class="text-gray-600 font-medium">
-            <li class="mb-4">
-              <a href="#" class="hover:underline">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline">Terms &amp; Conditions</a>
-            </li>
-          </ul>
-        </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+  © 2025 <a href="#" class="hover:underline font-semibold">EliteMoments™</a>. All Rights Reserved.
+</span>
+
+          <div class="flex mt-4 sm:justify-center sm:mt-0">
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                        <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                    </svg>
+                  <span class="sr-only">Facebook page</span>
+              </a>
+              
+              <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                    <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+                </svg>
+                  <span class="sr-only">Twitter page</span>
+              </a>
+              
+              
+          </div>
       </div>
     </div>
-    <hr class="my-6 border-gray-200 sm:mx-auto" />
-    <div class="sm:flex sm:items-center sm:justify-between">
-      <span class="text-sm text-gray-500 sm:text-center">© 2025 <a href="#" class="hover:underline">EliteMoments™</a>. All Rights Reserved.</span>
-      <div class="flex mt-4 sm:justify-center sm:mt-0 space-x-5">
-        <!-- Social Icons -->
-        <a href="#" class="text-gray-400 hover:text-gray-600">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 8 19">
-            <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
-          </svg>
-        </a>
-        <a href="#" class="text-gray-400 hover:text-gray-600">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 21 16">
-            <path d="..."/>
-          </svg>
-        </a>
-        <a href="#" class="text-gray-400 hover:text-gray-600">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 17">
-            <path d="..."/>
-          </svg>
-        </a>
-        <a href="#" class="text-gray-400 hover:text-gray-600">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-            <path d="..."/>
-          </svg>
-        </a>
-        <a href="#" class="text-gray-400 hover:text-gray-600">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-            <path d="..."/>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
 </footer>
 
+
+</footer>
+
+  
+<script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
 </body>
 </html>
