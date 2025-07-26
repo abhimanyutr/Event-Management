@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Form</title>
+  <title>Contact | EliteMoments</title>
+  <link rel="icon" href="./Images/logoT.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,8 +19,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
    <style>
-  *{
+  offcanvas-p{
      font-family: "Jost", sans-serif;
+     
 }
     
 /* Navbar stays fixed on top with white background */
@@ -29,7 +31,7 @@ nav {
   width: 100%;
   background-color: white;
   z-index: 1000;
-  padding: 10px 0;
+ 
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -53,11 +55,7 @@ nav ul {
     font-family: "Caveat", cursive;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
+
 </style>
 
   
@@ -67,7 +65,7 @@ nav ul li a {
 
     <div class="min-h-screen bg-gradient-to-br from-white  flex items-center justify-center px-4">
      
-      <nav class="bg-dark border-gray-200 dark:bg-gray-100 md:dark:border-blue-700 shadow-sm">
+      <nav class="bg-dark border-gray-200 dark:bg-gray-100 md:dark:border-blue-700 shadow-sm mt-0">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 fixed right-5">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse fixed left-10">
                 <img src="./Images/logoT.png" class="h-12 rounded-lg " alt="Flowbite Logo" />
@@ -113,44 +111,44 @@ nav ul li a {
                             </svg></button>
                         <!-- Dropdown menu -->
                         <div id="dropdownNavbar"
-                            class="z-10 hidden font-extrabold bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 dark:bg-transparent dark:divide-gray-600 offcanva-p">
-                            <ul class="block py-2 text-sm text-gray-600 dark:text-gray-800"
+                            class="z-10 hidden font-extrabold bg-white divide-y divide-gray-100  shadow-sm w-48 dark:bg-lime-50 dark:divide-gray-600 offcanva-p">
+                            <ul class="py-2 text-sm text-gray-600 dark:text-gray-800 block"
                                 aria-labelledby="dropdownLargeButton">
                                 <li>
                                     <a href="./service/service.html"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Wedding
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-100 dark:hover:text-green-950">Wedding
                                         Planners</a>
                                 </li>
 
                                 <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Corporate
+                                    <a href="./service/service.html"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-100 dark:hover:text-green-950">Corporate
                                         Event Management</a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Photography
+                                    <a href="./service/service.html"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-100 dark:hover:text-green-950">Photography
                                         & Videography</a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Catering
+                                    <a href="./service/service.html"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-100 dark:hover:text-green-950">Catering
                                         Services</a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Music
+                                    <a href="./service/service.html"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-100 dark:hover:text-green-950">Music
                                         & Entertainment</a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Private
+                                    <a href="./service/service.html"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-100 dark:hover:text-green-950">Private
                                         Parties</a>
                                 </li>
                             </ul>
                             <div class="py-1">
                                 <a href="#"
-                                    class="block px-4 py-2 text-sm text-gray-300 dark:bg-gray-950  dark:hover:bg-gray-900 dark:text-gray-200 dark:hover:text-white">Sign
+                                    class="block px-4 py-2 text-sm text-gray-300 dark:bg-lime-700  dark:hover:bg-lime-800 dark:text-gray-200 dark:hover:text-white">Sign
                                     out</a>
                             </div>
                         </div>
@@ -173,28 +171,28 @@ nav ul li a {
                             </svg></button>
                         <!-- Dropdown menu -->
                         <div id="dropdownNavbar2"
-                            class="z-10 hidden font-extrabold bg-white divide-y divide-gray-100 rounded-lg shadow-lg w-44 dark:bg-transparent dark:divide-gray-600 offcanva-p">
+                            class="z-10 hidden font-extrabold bg-white divide-y divide-gray-100  shadow-lg w-48 dark:bg-lime-50 dark:divide-gray-600 offcanva-p">
                             <ul class="py-2 text-sm text-gray-600 dark:text-gray-800 block"
                                 aria-labelledby="dropdownLargeButton">
                                 <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Photo
+                                    <a href="./gallary.html"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-100 dark:hover:text-green-950">Photo
                                         Gallary</a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Video
+                                    <a href="./gallary.html"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-100 dark:hover:text-green-950">Video
                                         Gallary</a>
                                 </li>
                                 <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-50 dark:hover:text-green-950">Wedding
+                                    <a href="./gallary.html"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-lime-100 dark:hover:text-green-950">Wedding
                                         Albums</a>
                                 </li>
                             </ul>
                             <div class="py-1">
                                 <a href="#"
-                                    class="block px-4 py-2 text-sm text-gray-300 dark:bg-gray-950  dark:hover:bg-gray-900 dark:text-gray-200 dark:hover:text-white">Sign
+                                    class="block px-4 py-2 text-sm dark:bg-lime-700  dark:hover:bg-lime-800 dark:text-gray-200 dark:hover:text-white">Sign
                                     out</a>
                             </div>
                         </div>
@@ -206,10 +204,10 @@ nav ul li a {
                     <!-- navbar 4lines -->
                     <div class="text-center">
                         <button
-                            class="text-white hover:bg-transparent  text-sm px-5 dark:bg-transparent dark:hover:bg-transparent focus:outline-none dark:focus:bg-transparent"
+                            class="text-dark hover:bg-transparent  text-sm px-5 dark:bg-transparent dark:hover:bg-transparent focus:outline-none dark:focus:bg-transparent"
                             type="button" data-drawer-target="drawer-disabled-backdrop"
                             data-drawer-toggle="drawer-disabled-backdrop" aria-controls="drawer-disabled-backdrop">
-                            <svg class="w-6 h-6 dark:text-white hover:text-lime-900 hover:text-lg" aria-hidden="true"
+                            <svg class="w-6 h-6 dark:text-dark hover:text-lime-900 hover:text-lg" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
@@ -321,19 +319,9 @@ nav ul li a {
   📍 Visit Us at This Location
 </h3>
   
-
-<iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.2720872234763!2d77.02756197437131!3d8.569815391474302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05b775a23d46a9%3A0x6fec0d6f3bbf8a55!2sEvent%20Plus!5e0!3m2!1sen!2sin!4v1753421970222!5m2!1sen!2sin"
-  width="100%"
-  height="450"
-  style="border:0;"
-  allowfullscreen=""
-  loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade"
-  class="mt-0">
-</iframe>
-
- 
+<div class="flex justify-center mb-3">
+<iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7857.972165510732!2d76.34238177484603!3d10.018006690088324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c8a3f65eefd%3A0xffbc873f9fc9bf13!2sKakkanad%20Junction%2C%20Thrikkakara%2C%20Kakkanad%2C%20Kochi%2C%20Kerala%20682030!5e0!3m2!1sen!2sin!4v1753511804143!5m2!1sen!2sin" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ </div>
 
  
 
